@@ -86,8 +86,8 @@ ul { list-style: none; }
 /* ── Hero ───────────────────────────────── */
 .hero {
   margin-top: var(--nav-h);
-  min-height: 500px;
-  background: linear-gradient(135deg, var(--dark-2) 0%, var(--dark-1) 60%, #111 100%);
+  min-height: 540px;
+  background: url('images/hero-main.png') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -100,7 +100,7 @@ ul { list-style: none; }
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 60% 60% at 50% 50%, rgba(255,167,53,.08), transparent);
+  background: linear-gradient(rgba(2, 48, 71, 0.85), rgba(25, 26, 27, 0.9));
 }
 .hero-inner { position: relative; max-width: 800px; }
 .hero-eyebrow {
