@@ -12,7 +12,7 @@
 
   function setCookie(name, value, days) {
     const expires = new Date(Date.now() + days * 864e5).toUTCString();
-    document.cookie = name + '=' + encodeURIComponent(value) + '; expires=' + expires + '; path=/; SameSite=Lax';
+    document.cookie = name + '=' + encodeURIComponent(value) + '; expires=' + expires + '; path=/; SameSite=Lax; Secure';
   }
 
   function getPreferences() {
@@ -25,14 +25,27 @@
     setCookie(COOKIE_KEY, JSON.stringify(prefs), 365);
   }
 
+  var GA_ID = 'G-XXXXXXXXXX'; // Replace with your GA4 Measurement ID
+
+  function loadGA() {
+    if (window._potGaLoaded) return;
+    window._potGaLoaded = true;
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    window.gtag('js', new Date());
+    window.gtag('config', GA_ID);
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+    document.head.appendChild(s);
+  }
+
   function applyPreferences(prefs) {
-    // Analytics placeholder — wire up GA/GTM here when ready
     if (prefs.analytics) {
-      console.log('[Cookies] Analytics accepted');
-      // e.g. window.gtag('consent', 'update', { analytics_storage: 'granted' });
+      loadGA();
     }
     if (prefs.marketing) {
-      console.log('[Cookies] Marketing accepted');
+      // Wire up ads/marketing tags here when ready
     }
   }
 
