@@ -106,12 +106,17 @@ button { cursor: pointer; font-family: inherit; }
   flex-shrink: 0;
 }
 .nav-logo-img {
-  height: 34px;
+  height: 40px;
   width: auto;
   display: block;
   background: #fff;
   border-radius: 6px;
-  padding: 3px 10px;
+  padding: 4px 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease;
+}
+.nav-logo-img:hover {
+  transform: scale(1.02);
 }
 .brand-name { display: none; }
 
@@ -219,7 +224,7 @@ button { cursor: pointer; font-family: inherit; }
     padding-right: 28px;
     border-right: 1px solid rgba(196,140,60,.2);
   }
-  .nav-logo-img { height: 38px; }
+  .nav-logo-img { height: 48px; }
 
   .nav-links {
     position: static;
@@ -319,7 +324,7 @@ button { cursor: pointer; font-family: inherit; }
 .hero {
   margin-top: var(--nav-h);
   min-height: calc(100svh - var(--nav-h));
-  background: url('images/hero-main.png') center/cover no-repeat;
+  background: url('images/hero-main.png') center 25%/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -900,3 +905,18 @@ footer {
 .process-num-secondary { background: var(--dark-2); color: var(--white); }
 .process-step h4 { font-weight: 600; font-size: 0.9rem; margin-bottom: 4px; }
 .process-step p  { font-size: 0.85rem; color: var(--gray); }
+
+/* Footer Logo */
+.footer-logo-img {
+  height: 48px;
+  width: auto;
+  display: inline-block;
+  background: #fff;
+  border-radius: 6px;
+  padding: 4px 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transition: transform 0.2s ease;
+}
+.footer-logo-img:hover {
+  transform: scale(1.02);
+}
