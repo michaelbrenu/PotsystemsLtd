@@ -109,6 +109,9 @@ button { cursor: pointer; font-family: inherit; }
   height: 34px;
   width: auto;
   display: block;
+  background: #fff;
+  border-radius: 6px;
+  padding: 3px 10px;
 }
 .brand-name { display: none; }
 
@@ -316,7 +319,7 @@ button { cursor: pointer; font-family: inherit; }
 .hero {
   margin-top: var(--nav-h);
   min-height: calc(100svh - var(--nav-h));
-  background: url('images/hero-construction.png') center/cover no-repeat;
+  background: url('images/hero-main.png') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
