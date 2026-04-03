@@ -6,24 +6,38 @@
   <title>Smart Building — POT System Limited</title>
   <meta name="description" content="POT System engineers intelligent buildings with energy efficiency, solar power, water harvesting, smart lighting, climate control, and real-time monitoring." />
   <link rel="icon" href="logo.jpg" type="image/jpeg" />
-  <link rel="stylesheet" href="styles.css?v=6" />
+  <link rel="stylesheet" href="styles.css?v=7" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Barlow:wght@400;500;600&family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;900&family=Fira+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; frame-src https://maps.google.com https://www.google.com; connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com https://region1.google-analytics.com;" />
 </head>
 <body>
 
   <nav class="nav">
-    <div class="nav-logo">
-      <a href="index.html"><img src="images/logo-full.jpg" alt="POTSystem Limited" /></a>
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html">
+        <img src="images/logo-full.jpg" class="nav-logo-img" alt="POTSystem Limited" />
+        <div class="brand-name">POTSystem<span>Architecture · Engineering · Construction</span></div>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="architecture.html">Architecture &amp; Urban Planning</a></li>
+        <li><a href="engineering.html">Engineering</a></li>
+        <li><a href="construction.html">Construction &amp; Project Management</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a class="cta-btn" href="contact.html">Contact
+          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="2" y1="10" x2="10" y2="2"/><polyline points="4,2 10,2 10,8"/></svg>
+        </a>
+      </div>
     </div>
-    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="engineering.html">Engineering</a></li>
-      <li><a href="architecture.html">Architecture</a></li>
-      <li><a href="smart-building.html" class="active">Smart Building</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
   </nav>
   <div class="nav-overlay"></div>
 
